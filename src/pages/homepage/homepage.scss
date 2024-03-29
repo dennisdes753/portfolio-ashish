@@ -1,0 +1,10 @@
+@import '../../app.scss';
+
+.portfolio_base{
+    width: 100%;
+    min-height: 100vh;
+    background: $baseColor;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../../app.scss';
+
+.footer{
+    width: 100%;
+    padding: 20px 0;
+    background: #151515;
+    .footer_inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer_left{
+            h4{
+                display: flex;
+                gap: 15px;
+                span {
+                    svg {
+                        width: 34px;
+                        height: 34px;
+                    }
+                }
+            }    
+        }
+        .footer_right {
+            display: flex;
+            gap: 15px;
+            a {
+                svg {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+    .footer_copyright{
+        width: 100%;
+        text-align: center;
+        h4{
+            font-size: 14px;
+            font-family: 'poppins', sans-serif;
+        }
+    }
+}    

@@ -1,0 +1,91 @@
+@import '../../../app.scss';
+
+.projects_section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 100px 0;
+    .projects_inner{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .project_description{
+            width: 40%;
+            min-height: 630px;
+            background: #161617;
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+            -webkit-box-shadow: 10px 24px 75px 4px rgba(22, 22, 23, 0.39);
+            -moz-box-shadow: 10px 24px 75px 4px rgba(22, 22, 23, 0.39);
+            box-shadow: 10px 24px 75px 4px rgba(22, 22, 23, 0.39);
+            p{
+                font-size: 24px;
+                height: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .section_heading {
+                position: absolute;
+                right: -60px;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .project_image_laptop {
+                width: 519px;
+                position: relative;
+                left: 65%;
+                transform: translate(72%, -19%);
+            }
+        }
+        .project_img {
+            width: 100%;
+            min-height: 565px;
+            background: #3B88FB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img{
+                width: 100%;
+                max-width: 660px;
+            }
+        }
+    }
+}
+
+.slider {
+    width: 100%;
+}
+
+.slick-slide img {
+    width: 479px;
+    position: relative;
+    height: 309px;
+    object-fit: cover;
+    object-position: top center;
+    left: 16px;
+    top: 14px;
+    &:before{
+        position: absolute;
+        content: '';
+        background-image: url(../../../assets/images/img/laptop.png);
+    }
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 1;
+}
+.slick-next {
+    right: 205px;
+    top: 400px;
+}
+.slick-prev {
+    left: 245px;
+    top: 400px;
+}

@@ -1,0 +1,107 @@
+@import '../../../app.scss';
+
+.development_section{
+    width: 100%;
+    min-height: 150vh;
+    position: relative;
+    padding: 80px 0 180px;
+    .development_content{
+        width: 100%;
+        h4{
+            font-size: 86px;
+            font-weight: 400;
+            position: relative;
+            white-space: nowrap;
+            text-align: center;
+            span {
+                font-family: "Oswald", sans-serif;
+                white-space: nowrap;
+        
+                &.green {
+                    color: #2CE2A9;
+                }
+        
+                &.blue {
+                    color: #3B88FB;
+                }
+            }
+        }
+        h6{
+            font-size: 30px;
+            text-align: center;
+        }
+        .line_verticle{
+            width: 1px;
+            height: 50vh;
+            background: #eee;
+            margin: 30px auto;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .development_img{
+        width: 100%;
+        position: relative;
+        img{
+            &:first-child{
+                width: 96px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                left: 11%;
+                top: 7%
+            }
+            &:nth-child(2) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                top: 30%;
+                right: 20px;
+            }
+            &:nth-child(3) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                top: 42%;
+                left: 20px;
+            }
+            &:nth-child(4) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                top: 80%;
+                right: 0;
+            }
+            &:nth-child(5) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                top: 0;
+                right: 20%;
+            }
+            &:nth-child(6) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                bottom: 40px;
+                left: 12%;
+            }
+            &:nth-child(7) {
+                width: 82px;
+                height: 145px;
+                object-fit: contain;
+                position: absolute;
+                bottom: -70px;
+                left: 50%;
+            }
+        }
+    }
+}
