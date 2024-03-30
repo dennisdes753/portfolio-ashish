@@ -27,3 +27,18 @@
         color: #fff;
     }
 }
+
+.cursor{
+    position: fixed;
+    margin-left: -20px;
+    margin-top: -20px;
+    transition: transform .2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+    background-image: url(../../assets/images/img/main__logo.svg);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

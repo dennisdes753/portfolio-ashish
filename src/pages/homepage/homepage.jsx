@@ -8,21 +8,45 @@ import Footer from '../component/Footer/footer'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import { AnimatePresence } from 'framer-motion'
 import { motion } from 'framer-motion'
+import { gsap } from 'gsap';
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import './homepage.scss'
 
 function Homepage() {
   const containerRef = useRef(null);
-  const [loading, setLoading] = useState(true);
+  const cursorRef = useRef(null);
+  let mouseX = 0;
+  let mouseY = 0;
+
   useEffect(() => {
-    // Simulating a loading delay with setTimeout
-    const timeout = setTimeout(() => {
-      setLoading(false); // Set loading to false after 2 seconds (simulating data loading)
-    }, 2000);
+    gsap.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        gsap.set(cursorRef.current, {
+          left: mouseX,
+          top: mouseY
+        });
+      }
+    });
 
-    return () => clearTimeout(timeout); // Cleanup function to clear timeout
-  }, []);
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []); // Empty dependency array to run this effect only once
 
+  const handleMouseMove = (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  };
+
+  // Attach event listener when component mounts
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []); // Empty dependency array to run this effect only once
   return (
     <>
       <LocomotiveScrollProvider
@@ -39,9 +63,8 @@ function Homepage() {
         containerRef={containerRef}
       >
         <AnimatePresence>
-          
-           
             <main className="portfolio_base" data-scroll-container ref={containerRef}>
+            <div className="cursor" ref={cursorRef}></div>
               <Banner />
               <About />
               <Projects/>
