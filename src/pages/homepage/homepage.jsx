@@ -6,7 +6,8 @@ import Development from '../component/development-skills/development'
 import Experience from '../component/experience/experience'
 import Footer from '../component/Footer/footer'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import './homepage.scss'
 
@@ -38,19 +39,8 @@ function Homepage() {
         containerRef={containerRef}
       >
         <AnimatePresence>
-          {loading ? ( // If loading is true, display the preloader
-            <motion.div
-              className="preloader"
-              data-scroll-speed="3"
-              initial={{ opacity: 1 }}
-              whileInView={{ opacity: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 1, delay: 2 }}
-            >
-              <h4>Namaste</h4>
-              <h1>Welcome To My Portfolio</h1>
-            </motion.div>
-          ):(
+          
+           
             <main className="portfolio_base" data-scroll-container ref={containerRef}>
               <Banner />
               <About />
@@ -59,7 +49,7 @@ function Homepage() {
               <Experience />
               <Footer/>
             </main>
-          )}  
+         
         </AnimatePresence>  
       </LocomotiveScrollProvider>
     </>
