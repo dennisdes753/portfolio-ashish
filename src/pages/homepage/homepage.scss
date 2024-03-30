@@ -9,3 +9,21 @@
         display: none;
     }
 }
+
+.preloader{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    h4{
+        font-size: 32px;
+        color: #fff;
+    }
+    h2{
+        font-size: 82px;
+        color: #fff;
+    }
+}
