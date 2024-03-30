@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Logo, BannerImage } from '../../../assets/images/img'
