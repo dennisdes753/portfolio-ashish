@@ -2,8 +2,10 @@
 
 .experience_sec{
     width: 100%;
-    padding: 100px 0;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
     .my_work{
         width: 100%;
         h4{

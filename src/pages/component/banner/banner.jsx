@@ -29,7 +29,7 @@ function Banner() {
                                   animate={{ opacity: 1 }}
                                   transition={{ duration: 2, ease: 'easeInOut', delay: 1 }}
                                 >
-                                    <Link to="#" className="global_button">
+                                    <Link to="https://drive.google.com/file/d/11grhO4I5u54srNJ8BVoxrG2Rh2Kkg0X0/view" target="_blank" className="global_button">
                                         Resume
                                     </Link>
                                 </motion.div>    
@@ -40,14 +40,14 @@ function Banner() {
             <div className="banner_section">
                 <Container>
                     <Row>
-                        <Col xxl="6" md="12" xs="12">
+                        <Col xxl="6" lg="6" md="12" xs="12">
                             <div className="content" data-scroll data-scroll-speed="4">
                                 <h2>Ashish Jain</h2>
                                 <h1><span className="green">Frontend</span> <span className="blue">Developer</span></h1>
                                 <p>Developing and designing things for the web since 2017. Currently
                                       available full-time and looking for new job opprtunities</p>
                                 <div className="navigation">
-                                    <Button variant="primary" className="global_button">Get In Touch</Button>      
+                                    <Link to="mailto:jainashish753@gmail.com" target="_blank" variant="primary" className="global_button">Get In Touch</Link>      
                                     <Link to="#">Work
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -58,7 +58,7 @@ function Banner() {
                                 </div>    
                             </div>
                         </Col>
-                        <Col xxl="6" md="12" xs="12">
+                        <Col xxl="6" lg="6" md="12" xs="12">
                             <motion.div
                                 initial={{ opacity: 0, x: 360 }}
                                 animate={{ opacity: 1, x: 0 }}

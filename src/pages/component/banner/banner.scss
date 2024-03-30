@@ -3,14 +3,6 @@
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    &::after{
-        position: absolute;
-        content: '';
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        background: #151515;
-    }
     .navbar {
         width: 100%;
         background: #000 !important;
@@ -40,16 +32,7 @@
                 font-weight: 700;
                 position: relative;
                 white-space: nowrap;
-                &::before{
-                    position: absolute;
-                    content: '';
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../../../assets/images/img/frontend_image.svg);
-                    background-repeat: no-repeat;
-                    top: -12px;
-                    right: 1px;
-                }
+                
                 span{
                     font-family: "Oswald", sans-serif;
                     white-space: nowrap;    
@@ -109,4 +92,31 @@
             }
         }
     }
-}    
+}
+
+@media(min-width: 1024px) and (max-width: 1425px){
+    .portfolio_banner .banner_section .img_banner img {
+        max-width: 403px;
+        min-height: 529px;
+    }
+    .portfolio_banner .banner_section .content h1 {
+        font-size: 66px;
+    }
+    .projects_section .projects_inner .project_description .project_image_laptop {
+        left: 35% !important;
+    }
+    .experience_sec .my_work .work_1 .project img {
+        max-width: 258px;
+        min-height: 198px !important;
+        max-height: 248px;
+        min-width: 228px !important;
+    }
+    .experience_sec .journey ul li:nth-child(odd) .company_detail h6 {
+        font-size: 18px;
+        word-break: break-word;
+        width: 190px;
+    }
+    .experience_sec {
+        padding-bottom: 50px;
+    }
+}

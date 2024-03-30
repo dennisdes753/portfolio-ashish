@@ -24,7 +24,7 @@ const About = () => {
           <section className="about_section" data-scroll-container variants={aboutSection} initial="hidden" animate="show">
             <Container>
                 <Row>
-                    <Col xxl="6" md="12" xs="12">
+                    <Col xxl="6" lg="6" md="12" xs="12">
                         <motion.div
                             className="image"
                             data-scroll
@@ -37,7 +37,7 @@ const About = () => {
                             <Image className="img-fluid" src={AboutImage} alt="About Image"/>
                         </motion.div>
                     </Col>
-                    <Col xxl="6" md="12" xs="12">
+                    <Col xxl="6" lg="6" md="12" xs="12">
                         <motion.div
                             className="content"
                             data-scroll

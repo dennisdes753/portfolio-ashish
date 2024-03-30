@@ -3,7 +3,7 @@
 .footer{
     width: 100%;
     padding: 20px 0;
-    background: #151515;
+    background: rgba($color: #151515, $alpha: 0.50);
     .footer_inner {
         width: 100%;
         display: flex;
@@ -14,6 +14,12 @@
                 display: flex;
                 gap: 15px;
                 span {
+                    animation: beat .25s infinite alternate;
+                    @keyframes beat {
+                        to {
+                            transform: scale(1.2);
+                        }
+                    }
                     svg {
                         width: 34px;
                         height: 34px;

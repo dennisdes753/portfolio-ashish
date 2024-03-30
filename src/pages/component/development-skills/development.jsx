@@ -10,7 +10,7 @@ const Development = () => {
         <section className="development_section">
             <Container>
                 <Row>
-                    <Col xxl="6" lg="12" md="12" xs="12">
+                    <Col xxl="6" lg="6" md="12" xs="12">
                         <motion.div
                             className="development_content"
                             data-scroll
@@ -25,21 +25,21 @@ const Development = () => {
                             <p>Designed by Ashish & Rudraksh</p>
                         </motion.div>
                     </Col>
-                    <Col xxl="6" lg="12" md="12" xs="12">
+                    <Col xxl="6" lg="6" md="12" xs="12">
                         <motion.div
                             className="development_img"
                             data-scroll
                             data-scroll-speed="2"
                             data-scroll-direction="horizontal"
                         >
-                            <Image className="img-fluid tech_logo" src={tech1} alt="Tech-1"/>
-                            <Image className="img-fluid tech_logo" src={tech2} alt="Tech-2" />
-                            <Image className="img-fluid tech_logo" src={tech3} alt="Tech-3" />
-                            <Image className="img-fluid tech_logo" src={tech4} alt="Tech-4" />
-                            <Image className="img-fluid tech_logo" src={tech5} alt="Tech-5" />
-                            <Image className="img-fluid tech_logo" src={tech6} alt="Tech-6" />
-                            <Image className="img-fluid tech_logo" src={tech7} alt="Tech-7" />
-                            <Image className="img-fluid" src={MainCharacter} alt="MainCharacter" />
+                            <Image className="img-fluid tech_logo tech_1" src={tech1} alt="Tech-1"/>
+                            <Image className="img-fluid tech_logo tech_2" src={tech2} alt="Tech-2" />
+                            <Image className="img-fluid tech_logo tech_3" src={tech3} alt="Tech-3" />
+                            <Image className="img-fluid tech_logo tech_4" src={tech4} alt="Tech-4" />
+                            <Image className="img-fluid tech_logo tech_5" src={tech5} alt="Tech-5" />
+                            <Image className="img-fluid tech_logo tech_6" src={tech6} alt="Tech-6" />
+                            <Image className="img-fluid tech_logo tech_7" src={tech7} alt="Tech-7" />
+                            <Image className="img-fluid main_img" src={MainCharacter} alt="MainCharacter" />
                         </motion.div>
                     </Col>
                 </Row>
