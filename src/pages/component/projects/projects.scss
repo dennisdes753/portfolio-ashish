@@ -89,3 +89,26 @@
     left: 245px;
     top: 400px;
 }
+
+@media(min-width: 320px) and (max-width: 991px) {
+    .projects_section .projects_inner {
+        flex-direction: column-reverse;
+    }
+    .projects_section .projects_inner .project_description {
+        width: 100%;
+        min-height: 40%;
+        padding: 20px 10px;
+    }
+    .projects_section {
+        min-height: 100vh;
+        padding: 0px;
+        margin: 170px 0;
+    }
+    .projects_section .projects_inner .project_description .section_heading {
+        left: 40px;
+        width: 70%;
+    }
+    .projects_section .projects_inner .project_img {
+        min-height: 40%;
+    }
+}

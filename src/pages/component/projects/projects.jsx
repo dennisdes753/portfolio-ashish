@@ -21,7 +21,7 @@ function Projects() {
     }, []);
   return (
     <>
-        <section className="projects_section">
+          <section className="projects_section" id="experience">
             <Container>
                 <Row>
                     <Col xxl="12" md="12" xs="12">

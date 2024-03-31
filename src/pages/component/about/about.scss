@@ -66,3 +66,17 @@
         }
     }
 }
+
+@media(min-width: 320px) and (max-width: 991px) {
+    .about_section .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about_section .image img{
+        max-width: 423px;
+        min-height: 519px;
+        border-radius: 85px;
+        margin: 40px auto;
+    }    
+}

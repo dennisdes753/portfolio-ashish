@@ -219,3 +219,59 @@
         }
     }
 }
+
+@media(min-width: 320px) and (max-width: 991px) {
+    .experience_sec .my_work .work_1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .experience_sec .my_work .work_1 .project img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    .experience_sec .journey {
+        width: 100%;
+        margin: 100px 0;
+    }
+    .experience_sec .journey ul::after {
+        display: none;
+    }
+    .experience_sec .journey ul li:nth-child(even) .company_detail {
+        align-items: flex-start;
+    }
+    .experience_sec .journey ul {
+        padding: 0 0 0 70px;
+    }
+    .experience_sec .journey ul li:nth-child(2):before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li::before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li:nth-child(3):before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li:nth-child(4):before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li:nth-child(5):before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li:nth-child(6):before {
+        left: -68px;
+    }
+    .experience_sec .journey ul li:nth-child(odd) .computer_svg {
+        left: -56px;
+    }
+    .experience_sec .journey ul li:nth-child(even) .computer_svg {
+        left: -56px;
+    }
+}
