@@ -38,7 +38,7 @@ function Banner() {
                                   animate={{ opacity: 1 }}
                                   transition={{ duration: 2, ease: 'easeInOut', delay: 1 }}
                                 >
-                                    <Link to="https://drive.google.com/file/d/11grhO4I5u54srNJ8BVoxrG2Rh2Kkg0X0/view" target="_blank" className="global_button">
+                                    <Link to="https://drive.google.com/file/d/1Lqr1zKMUlva7-4HI1L_qmK7hkEIf3fQK/view?usp=sharing" target="_blank" className="global_button">
                                         Resume
                                     </Link>
                                 </motion.div>    
